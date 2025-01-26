@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier League Table</title>
+  <link rel="stylesheet" href="epl.css">
+  <script src="https://kit.fontawesome.com/0d8d7b063e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header-icons">
+      <img src="Manchester_United_FC_logo.svg" alt="Man Utd" class="team-icon">
+      <img src="liverpool.png" alt="Liverpool" class="team-icon">
+      <img src="Chelsea_FC_logo.svg" alt="Arsenal" class="team-icon">
+      <img src="Arsenal_FC_logo.svg" alt="Chelsea" class="team-icon">
+      <img src="Tottenham_Hotspur_FC_logo.svg" alt="Chelsea" class="team-icon">
+      <img src="Manchester_City_2016.svg" alt="Man City" class="team-icon">
+      <img src="Everton_FC_logo_(introduced_2014).svg" alt="Chelsea" class="team-icon">
+      <img src="Newcastle_United_FC_logo.svg" alt="Chelsea" class="team-icon">
+      <img src="Aston-Villa-Logo.png" alt="Chelsea" class="team-icon">
+      <img src="AFC_Bournemouth_logo_(introduced_2013).svg" alt="Chelsea" class="team-icon">
+      <img src="Brighton_&_Hove_Albion_FC_logo.svg" alt="Chelsea" class="team-icon">
+      <img src="brentford.png" alt="Chelsea" class="team-icon">
+      <img src="Crystal_Palace_FC_logo_(introduced_2013).svg" alt="Chelsea" class="team-icon">
+      <img src="nottingham1.png" alt="Chelsea" class="team-icon">
+      <img src="Fulham_FC_logo.svg" alt="Chelsea" class="team-icon">
+      <img src="Southampton_FC_logo.svg" alt="Chelsea" class="team-icon">
+      <img src="leicester.png" alt="Chelsea" class="team-icon">
+      <img src="West_Ham_United_FC_logo_(2016).svg" alt="Chelsea" class="team-icon">
+      <img src="ipswich.png" alt="Chelsea" class="team-icon">
+      <img src="Wolverhampton_Wanderers_FC_logo.svg" alt="Chelsea" class="team-icon">
+    </div>
+    <div class="sep">
+      <img src="eplLogo.png" alt="Logo">
+    </div>
+    <div class="sep1">
+      <span class="text">Tables</span>
+      <img src="primary-graphic.svg" alt="Logo">
+    </div>
+  </div>
+  <div class="table-container">
+    <!--<h1 class="league-title">
+      <img src="epl.png" alt="logo">
+    </h1>-->
+    <table class="league-table">
+      <thead>
+        <tr>
+          <th class="position-col">Position</th>
+          <th class="club-col">Club</th>
+          <th>Played</th>
+          <th>Won</th>
+          <th>Drawn</th>
+          <th>Lost</th>
+          <th>GF</th>
+          <th>GA</th>
+          <th>GD</th>
+          <th>Points</th>
+          <th>Form</th>
+          <th>Next</th>
+          <th>More</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1<span class="greyDot"></span></td>
+          <td class="club-info">
+            <img src="liverpool.png" alt="Liverpool" class="club-logo">
+            Liverpool
+          </td>
+          <td>22</td>
+          <td>16</td>
+          <td>5</td>
+          <td>1</td>
+          <td>54</td>
+          <td>21</td>
+          <td>33</td>
+          <td class="points">53</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="AFC_Bournemouth_logo_(introduced_2013).svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>2<span class="greyDot"></span></td>
+          <td class="club-info">
+            <img src="Arsenal_FC_logo.svg" alt="Arsenal" class="club-logo">
+            Arsenal
+          </td>
+          <td>23</td>
+          <td>13</td>
+          <td>8</td>
+          <td>2</td>
+          <td>44</td>
+          <td>21</td>
+          <td>23</td>
+          <td class="points">47</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="Manchester_City_2016.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>3<span class="greyDot"></span></td>
+          <td class="club-info">
+            <img src="nottingham1.png" alt="Nottingham" class="club-logo">
+            Nottingham Forest
+          </td>
+          <td>23</td>
+          <td>13</td>
+          <td>5</td>
+          <td>5</td>
+          <td>33</td>
+          <td>27</td>
+          <td>6</td>
+          <td class="points">44</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="Brighton_&_Hove_Albion_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>4<span class="greenTriangle"></span></td>
+          <td class="club-info">
+            <img src="Manchester_City_2016.svg" alt="Man City" class="club-logo">
+            Manchester City
+          </td>
+          <td>23</td>
+          <td>12</td>
+          <td>5</td>
+          <td>6</td>
+          <td>47</td>
+          <td>30</td>
+          <td>17</td>
+          <td class="points">41</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="Arsenal_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>5<span class="greenTriangle"></span></td>
+          <td class="club-info">
+            <img src="Newcastle_United_FC_logo.svg" alt="Newcastle" class="club-logo">
+            Newcastle United
+          </td>
+          <td>23</td>
+          <td>12</td>
+          <td>5</td>
+          <td>6</td>
+          <td>41</td>
+          <td>27</td>
+          <td>14</td>
+          <td class="points">41</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+            <span class="form loss">L</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="Fulham_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>6<span class="redTriangle"></span></td>
+          <td class="club-info">
+            <img src="Chelsea_FC_logo.svg" alt="Chelsea" class="club-logo">
+            Chelsea
+          </td>
+          <td>23</td>
+          <td>11</td>
+          <td>7</td>
+          <td>5</td>
+          <td>45</td>
+          <td>30</td>
+          <td>15</td>
+          <td class="points">40</td>
+          <td>
+            <span class="form loss">L</span>
+            <span class="form draw">D</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="West_Ham_United_FC_logo_(2016).svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>7<span class="greyDot"></span></td>
+          <td class="club-info">
+            <img src="AFC_Bournemouth_logo_(introduced_2013).svg" alt="Bournemouth" class="club-logo">
+            Bournemouth
+          </td>
+          <td>23</td>
+          <td>11</td>
+          <td>7</td>
+          <td>5</td>
+          <td>41</td>
+          <td>26</td>
+          <td>15</td>
+          <td class="points">40</td>
+          <td>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="liverpool.png" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="club-info">
+            <img src="t7.png" alt="Aston Villa" class="club-logo">
+            Aston Villa
+          </td>
+          <td>22</td>
+          <td>10</td>
+          <td>6</td>
+          <td>6</td>
+          <td>33</td>
+          <td>34</td>
+          <td>-1</td>
+          <td class="points">36</td>
+          <td>
+            <span class="form loss">L</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+          </td>
+          <td>
+            <img src="West_Ham_United_FC_logo_(2016).svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="club-info">
+            <img src="Brighton_&_Hove_Albion_FC_logo.svg" alt="Brighton & Hove Albion" class="club-logo">
+            Brighton & Hove Albion
+          </td>
+          <td>22</td>
+          <td>8</td>
+          <td>10</td>
+          <td>4</td>
+          <td>35</td>
+          <td>30</td>
+          <td>5</td>
+          <td class="points">34</td>
+          <td>
+            <span class="form draw">D</span>
+            <span class="form draw">D</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="Everton_FC_logo_(introduced_2014).svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="club-info">
+            <img src="Fulham_FC_logo.svg" alt="Manchester City" class="club-logo">
+            Fulham
+          </td>
+          <td>22</td>
+          <td>8</td>
+          <td>9</td>
+          <td>5</td>
+          <td>34</td>
+          <td>30</td>
+          <td>4</td>
+          <td class="points">33</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form draw">D</span>
+            <span class="form loss">L</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="Manchester_United_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="club-info">
+            <img src="brentford.png" alt="Brentford" class="club-logo">
+            Brentford
+          </td>
+          <td>22</td>
+          <td>8</td>
+          <td>4</td>
+          <td>10</td>
+          <td> 40</td>
+          <td>39</td>
+          <td>1</td>
+          <td class="points">28</td>
+          <td>
+            <span class="form draw">D</span>
+            <span class="form loss">L</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="Crystal_Palace_FC_logo_(introduced_2013).svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td class="club-info">
+            <img src="Crystal_Palace_FC_logo_(introduced_2013).svg" alt="Manchester City" class="club-logo">
+            Crystal Palace
+          </td>
+          <td>22</td>
+          <td>6</td>
+          <td>9</td>
+          <td>7</td>
+          <td>25</td>
+          <td>28</td>
+          <td>-3</td>
+          <td class="points">27</td>
+          <td>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="brentford.png" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td class="club-info">
+            <img src="Manchester_United_FC_logo.svg" alt="Manchester City" class="club-logo">
+            Manchester United
+          </td>
+          <td>22</td>
+          <td>7</td>
+          <td>5</td>
+          <td>10</td>
+          <td>27</td>
+          <td>32</td>
+          <td>-5</td>
+          <td class="points">26</td>
+          <td>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form draw">D</span>
+            <span class="form win">W</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="Fulham_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td class="club-info">
+            <img src="West_Ham_United_FC_logo_(2016).svg" alt="Manchester City" class="club-logo">
+            West Ham United
+          </td>
+          <td>22</td>
+          <td>7</td>
+          <td>5</td>
+          <td>10</td>
+          <td>27</td>
+          <td>43</td>
+          <td>-16</td>
+          <td class="points">26</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form win">W</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="West_Ham_United_FC_logo_(2016).svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td class="club-info">
+            <img src="Tottenham_Hotspur_FC_logo.svg" alt="Manchester City" class="club-logo">
+            Tottenham Hotspur
+          </td>
+          <td>22</td>
+          <td>7</td>
+          <td>3</td>
+          <td>12</td>
+          <td>45</td>
+          <td>35</td>
+          <td>10</td>
+          <td class="points">24</td>
+          <td>
+            <span class="form loss">L</span>
+            <span class="form draw">D</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="leicester.png" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td class="club-info">
+            <img src="Everton_FC_logo_(introduced_2014).svg" alt="Manchester City" class="club-logo">
+            Everton
+          </td>
+          <td>21</td>
+          <td>4</td>
+          <td>8</td>
+          <td>9</td>
+          <td>18</td>
+          <td>28</td>
+          <td>-10</td>
+          <td class="points">20</td>
+          <td>
+            <span class="form draw">D</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form win">W</span>
+          </td>
+          <td>
+            <img src="Brighton_&_Hove_Albion_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td class="club-info">
+            <img src="Wolverhampton_Wanderers_FC_logo.svg" alt="Wolverhamptom Wanderers" class="club-logo">
+            Wolverhamptom Wanderers
+          </td>
+          <td>22</td>
+          <td>4</td>
+          <td>4</td>
+          <td>14</td>
+          <td>32</td>
+          <td>51</td>
+          <td>-19</td>
+          <td class="points">16</td>
+          <td>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="Arsenal_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td class="club-info">
+            <img src="ipswich.png" alt="Manchester City" class="club-logo">
+            Ipswich Town
+          </td>
+          <td>22</td>
+          <td>3</td>
+          <td>7</td>
+          <td>12</td>
+          <td>20</td>
+          <td>43</td>
+          <td>-23</td>
+          <td class="points">16</td>
+          <td>
+            <span class="form loss">L</span>
+            <span class="form win">W</span>
+            <span class="form draw">D</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="liverpool.png" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td class="club-info">
+            <img src="leicester.png" alt="Manchester City" class="club-logo">
+            Leicester City
+          </td>
+          <td>22</td>
+          <td>3</td>
+          <td>5</td>
+          <td>14</td>
+          <td>23</td>
+          <td>48</td>
+          <td>-25</td>
+          <td class="points">14</td>
+          <td>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="Tottenham_Hotspur_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td class="club-info">
+            <img src="Southampton_FC_logo.svg" alt="Manchester City" class="club-logo">
+            Southhampton
+          </td>
+          <td>22</td>
+          <td>1</td>
+          <td>3</td>
+          <td>18</td>
+          <td>15</td>
+          <td>50</td>
+          <td>-35</td>
+          <td class="points">6</td>
+          <td>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+            <span class="form loss">L</span>
+          </td>
+          <td>
+            <img src="Newcastle_United_FC_logo.svg" alt="Next Team" class="next-opponent">
+          </td>
+          <td><i class="fa-solid fa-chevron-down"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    <div class="box">
+        <p>&copy; PREMIER LEAGUE 2025</p>
+      </div>
+      <img src="pl-logo-full.svg" alt="Pic">
+  </footer>
+</body>
+</html>
