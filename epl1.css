@@ -9,7 +9,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #37003c;
-  padding: 18px;
+  padding: 20px;
   font-weight: 500;
   font-style: normal;
 }
@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
-  padding: 15px 10px 15px 10px;
+  padding: 10px;
   background-color: transparent;
   position: relative;
   z-index: 1;
@@ -44,6 +44,12 @@ body {
   border-radius: 10px;
 }
 
+.league-title img {
+  height: 13%;
+  width: 13%;
+  padding: 5px 0 0 10px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -51,27 +57,23 @@ table {
 
 th, td {
   text-align: center;
+  padding: 15px;
   border-bottom: 1px solid #ebe5eb;
   vertical-align: middle;
-  padding: 18px 20px;
 }
 
-td {
-  padding: 18px 20px;
-}
-
-th.positionCol, td:nth-child(1) {
+th.position-col, td:nth-child(1) {
   text-align: left; 
   padding-left: 20px;
   width: 50px; 
 }
 
 th.club-col, td:nth-child(2) {
-  font-weight: 550;
   text-align: left;
   width: 350px;
-  padding: 18px 38px 18px 38px;
+  padding: 15px 25px 15px 25px;
 }
+
 
 table thead tr {  
   border-left: 1px solid#ebe5eb;
@@ -85,12 +87,11 @@ table thead tr {
   line-height: 15px;
 }
 
+
 .clubInfo {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 0;
-  border-bottom: 1px solid #ebe5eb;
 }
 
 .clubLogo {
@@ -98,7 +99,6 @@ table thead tr {
   height: 30px;
   border-radius: 30%;
   vertical-align: middle;
-  
 }
 
 .points {
@@ -170,7 +170,7 @@ body, html {
 }
 
 .tableContainer {
-  padding: 18px;
+  padding: 20px;
 }
 
 .wrapper {
@@ -263,7 +263,7 @@ td:first-child {
   position: relative; 
 }
 
-/* Prev Positions Logo */
+/* Position the span elements uniformly */
 td:first-child span {
   position: absolute;
   top: 50%;
@@ -273,20 +273,31 @@ td:first-child span {
 
 /*Columns 3-9 row 2 onwards*/
 .leagueTable tbody tr td:nth-child(n+3):nth-child(-n+9) {
-  font-weight: 300; 
-  font-size: 1rem; 
-  color: #37003c; 
-}
+    font-weight: 300; 
+    font-size: 1rem; 
+    color: #37003c; 
+  }
+  
+  /*ClubName hover*/
+  .leagueTable tbody tr td:nth-child(2):hover {
+    cursor: pointer; 
+    text-decoration: underline; 
+  }
+  
+  /* RELEGATION lINE */
+  .leagueTable tbody tr:nth-child(17) {
+    border-bottom: 2px solid #e0005e;
+  } 
 
-/*ClubName hover*/
-.leagueTable tbody tr td:nth-child(2):hover {
-  cursor: pointer; 
-  text-decoration: underline; 
-}
-
-/* RELEGATION lINE */
-.leagueTable tbody tr:nth-child(17) {
-  border-bottom: 2px solid #e0005e;
-} 
-
-
+  /* Header styles for the "Club" column */
+.leagueTable thead tr th:nth-child(2) {
+    text-align: left; /* Align header text to the left */
+    padding: 18px 38px; /* Consistent padding */
+  }
+  
+  /* Body styles for the "Club" column */
+  .leagueTable tbody tr td:nth-child(2) {
+    text-align: left; /* Align body text to the left */
+    padding: 18px 38px; /* Consistent padding */
+  }
+  
